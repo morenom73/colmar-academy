@@ -5,7 +5,7 @@ html {
   background-color: #f7f7f7;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  color: #2e2e2e;
+  color: #262d3f;
   box-sizing: border-box;
 }
 
@@ -95,6 +95,10 @@ header .mobile {
   display: none;
 }
 
+header a:hover {
+  color: #24abe2;
+}
+
 @media only screen and (max-width: 840px) {
   .colmar,
   .academy {
@@ -126,7 +130,7 @@ header .mobile {
 }
 
 .container-banner-container {
-  background-color: #959595;
+  background-color: #869099;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -158,6 +162,12 @@ header .mobile {
   padding-top: .5rem;
   padding-bottom: .5rem;
   margin-top: 1rem;
+}
+
+
+.button:hover {
+  background-color: #f7f7f8;
+  color: #402b40;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -282,13 +292,17 @@ section .class-info-text {
 .guest-lecture,
 .orientation,
 .campus {
-  border-bottom: .5px solid #959595;
-  border-left: .5px solid #959595;
+  border-bottom: .5px solid #2e2e2e;
+  border-left: .5px solid #2e2e2e;
 }
-
 
   .sidebar .mobile-img {
     display: none;
+}
+
+
+.sidebar:hover {
+  background-color: #869099;
 }
 
 @media only screen and (max-width: 600px ) {
@@ -337,7 +351,7 @@ section .class-info-text {
 
 .start-learning-container {
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: #869099;
 }
 
 .start-learning-container h2 {
@@ -391,6 +405,16 @@ section .class-info-text {
 .mobile-start-learning {
   display: none;
 }
+
+.start-learning-content:hover {
+background-color: #869099;
+}
+
+.mobile-start-learning li:hover {
+  background-color: #869099;
+}
+
+
 
 @media only screen and (max-width: 600px ) {
   .start-learning-sub-container {
@@ -492,8 +516,8 @@ section .thesis-exhibit-text {
 footer {
   width: 100%;
   height: 64px;
-  background-color: #f1f1f1;
-  border-top: .5px solid #959595;
+  background-color: #869099;
+  border-top: .5px solid #2e2e2e;
 }
 
 footer p {
