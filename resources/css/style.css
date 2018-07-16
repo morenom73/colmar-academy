@@ -178,49 +178,32 @@ header .mobile {
   }
 }
 
-/* @media only screen and (max-width: 680px ) {
-   .container-banner-container {
-    width: 100%;
+@media only screen and (max-width: 680px ) {
+  .container-banner-container {
     display: flex;
     flex-direction: column;
-    padding-bottom: 2rem;
+    align-items: flex-start;
+    padding: 0 0 1rem 0;
     }
 
-    .container-banner img {
+    .container-banner-container img {
       width: 100%;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     .container-banner-text {
-      margin: auto;
       width: 100%;
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-
-    .container-banner .sub-head {
-      padding-top: 1.5rem;
-      line-height: 1.47;
-    }
-
-    h1 {
-      line-height: 1.333;
+      margin-left: 1rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
     }
 
     .button {
-      width: 90%;
-      background-color: #646;
-      margin-top: 1.5rem;
-      text-transform: uppercase;
+      width: 75%;
     }
   }
 
-@media only screen and (max-width: 320px ) {
-  .container-banner-text {
-    margin: auto;
-    width: 90%;
-} */
 
 /* Campus info section */
 
@@ -278,6 +261,7 @@ section .class-info-text {
   height: auto;
   margin: 1.5rem;
 }
+
 .orientation img {
   margin-top: -.075rem;
 }
@@ -302,11 +286,52 @@ section .class-info-text {
   border-left: .5px solid #959595;
 }
 
-.guest-lecture,
-.fisma {
-  background-color: #f1f1f1;
+
+  .sidebar .mobile-img {
+    display: none;
 }
 
+@media only screen and (max-width: 600px ) {
+  section .main-class-info  {
+    display: none;
+  }
+
+  .sidebar-container {
+    max-width: 100%;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .sidebar .desktop-img {
+    display: none;
+  }
+
+  .sidebar .mobile-img {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+  .sidebar-text {
+    width: 100%;
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+
+  .guest-lecture,
+  .orientation,
+  .campus {
+    border-left: none;
+  }
+}
 
 /* Start Learning Styles */
 
@@ -347,7 +372,6 @@ section .class-info-text {
   margin-right: 1rem;
 }
 
-
 .start-learning-content img {
   height: auto;
   width: 100%;
@@ -362,6 +386,42 @@ section .class-info-text {
 .course {
   padding-top: .5rem;
   padding-bottom: .5rem;
+}
+
+.mobile-start-learning {
+  display: none;
+}
+
+@media only screen and (max-width: 600px ) {
+  .start-learning-sub-container {
+    display: none;
+  }
+
+  .start-learning-container {
+    background-color: #f7f7f7;
+  }
+
+  .start-learning-container h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .mobile-start-learning {
+    display: contents;
+  }
+
+  .mobile-start-learning li {
+    padding: 1rem;
+    font-size: 1.333rem;
+    background-color: #f1f1f1;
+    margin: .5rem 1rem .5rem 1rem;
+
+  }
+
+  .mobile-start-learning a {
+    color: #2e2e2e;
+  }
+
 }
 
 /* Thesis Exhibit Styles */
@@ -396,13 +456,35 @@ section .thesis-exhibit-text {
   padding-bottom: 2rem;
 }
 
-.thesis-exhibit img {
+.thesis-exhibit video {
   width: 100%;
+  height: auto;
 }
 
 .thesis-exhibit-text .sub-head {
   padding-top: 0.5rem;
   padding-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 680px ) {
+  .sidebar-container-thesis,
+  .thesis-exhibit-text {
+    display: none;
+  }
+
+  .thesis-exhibit video {
+    padding-bottom: 3.5rem;
+  }
+
+  section .thesis-exhibit {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .thesis-exhibit-sub-container {
+    margin-top: 1.5rem;
+  }
 }
 
 /* Footer Styles */
@@ -432,7 +514,6 @@ footer .copyright {
   flex: 1;
 }
 
-
 footer nav ul {
   display: flex;
 }
@@ -444,4 +525,15 @@ footer nav li {
 footer a {
   color: #2e2e2e;
   font-size: .75rem;
+}
+
+@media only screen and (max-width: 460px ) {
+  footer .desktop {
+    display: none;
+  }
+
+  footer .copyright {
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+  }
 }
